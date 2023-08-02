@@ -1,0 +1,65 @@
+.footerSection {
+    background-color: rgba(105, 105, 105, 0.05);
+
+    .footerContent {
+        display: flex;
+        justify-content: space-evenly;
+        width: 1000px;
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 100px 0;
+
+        .linkSection li:hover {
+            cursor: pointer;
+        }
+
+        .section {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+
+            svg {
+                flex-shrink: 0;
+                font-size: 20px;
+            }
+
+            .contactItems {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                .footerText {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+
+            .footerIcons {
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+
+                .footerIcon {
+                    padding: 2px;
+                }
+
+                svg {
+                    font-size: 20px;
+                }
+
+                a {
+                    color: black;
+                }
+            }
+
+            .footerIcon :hover {
+                cursor: pointer;
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.headerSection {
+    z-index: 99;
+    background-color: white;
+
+    .headerContent {
+        width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navbarLogo {
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .navbarLogo:hover {
+            cursor: pointer;
+        }
+
+        .navbarItems {
+            font-size: 20px;
+            font-weight: 600;
+            color: #438fde;
+            text-transform: capitalize;
+        }
+
+        .navbarItems ul {
+            list-style: none;
+            display: flex;
+            gap: 60px;
+        }
+
+        .navbarItems ul li:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+            transition: all 0.1s;
+        }
+
+        .navbarButton {
+            border: 1px solid #438fde;
+            background-color: #438fde;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            font-weight: 600;
+        }
+
+        .navbarButton:hover {
+            cursor: pointer;
+            background-color: white;
+            color: #438fde;
+            border: 1px solid #438fde;
+            transition: all 0.3s;
+        }
+    }
+
+    &.stickyHeader {
+        position: sticky;
+        top: 0;
+        animation: sticky-header 0.3s ease forwards;
+        transform: translateY(-80px);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+}
+
+.visible {
+    transform: translateY(-200%);
+    transition: all 0.4s;
+}
+
+@keyframes sticky-header {
+    0% {
+        transform: translateY(-80px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

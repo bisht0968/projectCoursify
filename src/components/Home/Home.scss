@@ -1,0 +1,61 @@
+.homeSection {
+    .homeContent {
+        .banner {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+
+            img {
+                width: 100%;
+                background-image: linear-gradient(to bottom, #000, transparent);
+            }
+        }
+
+        .banner::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            background-image: linear-gradient(to top, #333333, transparent);
+        }
+
+        .heroSection {
+            position: absolute;
+            top: 10%;
+            left: 20%;
+            display: flex;
+            gap: 100px;
+            align-items: center;
+
+            .title {
+                color: #438fde;
+                width: 50%;
+                font-weight: bolder;
+                font-size: 70px;
+                text-shadow: 1px 1px 0 #297dd7, 1px -1px 0 #297dd7, -1px 1px 0 #297dd7, -1px -1px 0 #297dd7;
+            }
+
+            .button {
+                border: 1px solid black;
+                border-radius: 10px;
+                padding: 15px;
+                font-size: 25px;
+                font-weight: 500;
+                color: rgb(230, 230, 230);
+                background-color: rgb(56, 56, 56);
+                border: none;
+            }
+
+            .button:hover {
+                background-color: rgb(230, 230, 230);
+                border: none;
+                color: black;
+                cursor: pointer;
+                transform: scale(1.05);
+                transition: all 0.3s;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.contactSection {
+    .contactContent {
+        .contactContainer {
+            width: 500px;
+            left: 29%;
+            position: fixed;
+            top: 10%;
+            z-index: 113;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            display: flex;
+            border-radius: 10px;
+            flex-direction: column;
+            gap: 15px;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 20px;
+
+            input,
+            textarea {
+                padding: 10px;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                border-radius: 5px;
+                outline: none;
+                color: rgba(0, 0, 0, 0.5);
+                font-weight: 400;
+            }
+
+            .button {
+                border: 1px solid rgb(56, 56, 56);
+                background-color: rgb(56, 56, 56);
+                padding: 15px;
+                color: white;
+                margin-block: 10px;
+                margin-inline: auto;
+                text-align: center;
+                width: 20%;
+                border-radius: 10px;
+
+                button {
+                    background-color: inherit;
+                    border: 0;
+                    outline: 0;
+                    color: inherit;
+                    font-size: inherit;
+                    font-weight: inherit;
+                }
+            }
+
+            .button:hover {
+                border: 1px solid black;
+                color: black;
+                transition: all 0.4s;
+                background-color: white;
+                cursor: pointer;
+            }
+
+            .cross {
+                position: absolute;
+                right: 3%;
+            }
+
+            .cross:hover {
+                cursor: pointer;
+            }
+
+            .submitDialogueBox {
+                text-align: center;
+            }
+        }
+    }
+}
